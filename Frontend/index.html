@@ -1,224 +1,261 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organic Store</title>
-    <!-- Bootstrap CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-     <script src="./index.js" defer></script> <!-- External JS file loaded with defer -->
+    <title>Organify - Organic Food Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            min-height: 350px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .category-card img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+        .testimonial {
+            background: #f4f6f8;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Organify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <form class="d-flex ms-lg-3">
+                    <input class="form-control me-2" type="search" placeholder="Search...">
+                    <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg">
+        <div class="container text-center">
+            <h1 class="fw-bold display-4">Nature’s Choice for Healthy Living</h1>
+            <p class="lead">Crafted with the highest quality organic, hi-oleic peanuts and natural sea salt, this extra crunchy delight.</p>
+            <a href="#" class="btn btn-danger btn-lg mt-2">Purchase Now</a>
+        </div>
+    </section>
+
+    <style>
+    .service-card {
+        border-radius: 30px;
+        /* Soft, rounded corners */
+        box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15), 0 2px 4px rgba(44,62,80,0.05);
+        /* More depth in shadow */
+        padding: 32px 18px;
+        transition: box-shadow 0.2s;
+        background-clip: padding-box;
+        border: none;
+    }
+    .service-card:hover {
+        box-shadow: 0 12px 40px rgba(44, 62, 80, 0.23), 0 2px 10px rgba(44,62,80,0.08);
+    }
+</style>
+
+<section class="container text-center my-5">
+    <h3>
+        <strong>Wholesome Dairy Delights</strong><br>
+        <span class="text-success">Delivered Fresh</span> to You
+    </h3>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-3 mx-2 my-3 service-card bg-light">
+            <div class="icon mb-2"><i class="fas fa-truck fa-2x text-success"></i></div>
+            Quick, No-Cost Delivery & Setup Included
+        </div>
+        <div class="col-12 col-md-3 mx-2 my-3 service-card bg-warning-subtle">
+            <div class="icon mb-2"><i class="fas fa-dollar-sign fa-2x text-warning"></i></div>
+            30-Day, No-Risk Money-Back Assurance
+        </div>
+        <div class="col-12 col-md-3 mx-2 my-3 service-card bg-danger-subtle">
+            <div class="icon mb-2"><i class="fas fa-headset fa-2x text-danger"></i></div>
+            24/7 Expert Help, Always Just a Click Away
+        </div>
+        <div class="col-12 col-md-3 mx-2 my-3 service-card bg-info-subtle">
+            <div class="icon mb-2"><i class="fas fa-credit-card fa-2x text-info"></i></div>
+            Flexible Payments with Various Credit Card Options
+        </div>
+    </div>
+</section>
+
+
+        
+
+
+    <!-- Category Section -->
+      <title>Featured Categories</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .featured-section {
+      padding: 4rem 0;
+    }
+    .category-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(44, 62, 80, 0.15);
+      padding: 1.5rem 1rem;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .category-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 16px 40px rgba(44, 62, 80, 0.25);
+    }
+    .category-card img {
+      max-width: 100%;
+      height: 110px;
+      object-fit: cover;
+      margin-bottom: 0.75rem;
+      border-radius: 12px;
+    }
+    .category-card div {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+  </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="./images/image.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top" />
-      OrganicWorld
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
+<section class="container featured-section">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">Featured Categories</h2>
+  </div>
+  <div class="row g-4 justify-content-center">
+    <div class="col-6 col-md-2 category-card">
+      <img src="./images/Honey.png" alt="Honey" />
+      <div>Organic Honey</div>
+    </div>
+    <div class="col-6 col-md-2 category-card">
+      <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Pancakes" />
+      <div>Delicious Pancakes</div>
+    </div>
+    <div class="col-6 col-md-2 category-card">
+      <img src="./images/Fruits.png" alt="Fruits" />
+      <div>Organic Fruits</div>
+    </div>
+    <div class="col-6 col-md-2 category-card">
+      <img src="./images/Vegetable.png" alt="Vegetable" />
+      <div>Organic Vegetables</div>
     </div>
   </div>
-</nav>
+</section>
 
-<div class="bg-image text-white" style="
-  background-image: url('./images/background.png');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-">
-  <div style="
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* dark overlay for contrast */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  ">
-    <div class="text-center p-4">
-      <h1 class="display-4 fw-bold">Nature's Choice for Healthy Living!</h1>
-      <p class="fs-5 mb-4">Fresh and natural organic products, delivered at your doorstep.</p>
-      <a href="#" class="btn btn-success btn-lg">Shop Now</a>
-    </div>
-  </div>
-</div>
-<div class="container my-5">
-  <div class="row text-center">
-    <div class="col-md-3 mb-3">
-      <div class="p-4 bg-success bg-opacity-10 rounded shadow-sm">
-        <span class="text-success fs-2 mb-2 d-block"><i class="bi bi-truck"></i></span>
-        <h6 class="fw-bold mb-1">Quick, No-Cost Delivery</h6>
-        <div class="text-muted small">Setup included</div>
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <div class="p-4 bg-warning bg-opacity-25 rounded shadow-sm">
-        <span class="text-warning fs-2 mb-2 d-block"><i class="bi bi-currency-dollar"></i></span>
-        <h6 class="fw-bold mb-1">30-Day Money-Back</h6>
-        <div class="text-muted small">No risk assurance</div>
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <div class="p-4 bg-danger bg-opacity-10 rounded shadow-sm">
-        <span class="text-danger fs-2 mb-2 d-block"><i class="bi bi-headset"></i></span>
-        <h6 class="fw-bold mb-1">24/7 Expert Help</h6>
-        <div class="text-muted small">Just a click away</div>
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <div class="p-4 bg-info bg-opacity-10 rounded shadow-sm">
-        <span class="text-info fs-2 mb-2 d-block"><i class="bi bi-credit-card"></i></span>
-        <h6 class="fw-bold mb-1">Flexible Payments</h6>
-        <div class="text-muted small">Credit card options</div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="container py-5">
-  <h2 class="mb-4 text-center">Featured Categories</h2>
-  <div class="row text-center">
-    <div class="col-6 col-md-3 mb-4">
-      <div class="card border-0 shadow-sm">
-        <img src="./images//Honey.png" class="card-img-top mx-auto d-block" style="height:80px;width:auto;" alt="Honey">
-        <div class="card-body p-2">
-          <h6 class="card-title mb-0">Organic Honey</h6>
+​
+
+
+
+    <!-- Product Grid -->
+    <section class="container mt-4">
+        <h2 class="fw-bold mb-3 text-center">Quality Products</h2>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card h-100">
+                    <img src="./images//Peachjam.png" class="card-img-top" alt="Peach Spread">
+                    <div class="card-body">
+                        <h5 class="card-title">Peach Organic Spread</h5>
+                        <p class="card-text">$12.00 - $30.00</p>
+                        <button class="btn btn-success w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100">
+                    <img src="./images//image.png" class="card-img-top" alt="Cracker">
+                    <div class="card-body">
+                        <h5 class="card-title">Crunchy Chickpea Cracker</h5>
+                        <p class="card-text">$16.43</p>
+                        <button class="btn btn-success w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100">
+                    <img src="./images//cookie.png" class="card-img-top" alt="Cracker">
+                    <div class="card-body">
+                        <h5 class="card-title">Cookies</h5>
+                        <p class="card-text">$18.43</p>
+                        <button class="btn btn-success w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100">
+                    <img src="./images//Screenshot 2025-10-17 102624.png" class="card-img-top" alt="Cracker">
+                    <div class="card-body">
+                        <h5 class="card-title">Crunchy Chickpea Cracker</h5>
+                        <p class="card-text">$16.43</p>
+                        <button class="btn btn-success w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            c:\Users\Admin\OneDrive\Documents\Pictures\Screenshots\Screenshot 2025-10-17 102624.png c:\Users\Admin\OneDrive\Documents\Pictures\Screenshots\cookie.png
+            
+            <!-- Add more product cards here -->
         </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-      <div class="card border-0 shadow-sm">
-        <img src="./images/Milk.png" class="card-img-top mx-auto d-block" style="height:80px;width:auto;" alt="Milk">
-        <div class="card-body p-2">
-          <h6 class="card-title mb-0">Dairy & Cheese</h6>
+    </section>
+    <section class="container my-5">
+        <h3><span class="text-success">Customer Praise</span> for Our Organic Online Store</h3>
+        <div class="testimonial-list">
+            <div class="testimonial-card p-4">
+                <div class="mb-2 text-warning">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>I'm extremely pleased with my recent purchases from this organic food store! The products are of top-notch quality, the delivery is always on time, and the flavors are absolutely fantastic.</p>
+                <div class="fw-bold mt-2">- Victor Adams, Executive Director</div>
+            </div>
+            <div class="testimonial-card p-4">
+                <div class="mb-2 text-warning">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>Great shopping experience! Prompt support and reliable delivery. Highly recommended for healthy food lovers.</p>
+                <div class="fw-bold mt-2">- Sane Smith, Executive Director</div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-      <div class="card border-0 shadow-sm">
-        <img src="./images/Fruits.png" class="card-img-top mx-auto d-block" style="height:80px;width:auto;" alt="Fruits">
-        <div class="card-body p-2">
-          <h6 class="card-title mb-0">Fresh Fruits</h6>
+    </section>
+
+    <!-- Testimonial Section -->
+    <div class="container testimonial rounded">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2 text-center">
+                <i class="fas fa-quote-left fa-2x mb-3 text-success"></i>
+                <p class="lead">“I'm really impressed with my orders from this organic food store! The quality is outstanding, delivery quick and efficient, and the taste is just perfect.”</p>
+                <strong>- Sane Smith, Executive Director</strong>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="col-6 col-md-3 mb-4">
-      <div class="card border-0 shadow-sm">
-        <img src="./images//Vegetable.png" class="card-img-top mx-auto d-block" style="height:80px;width:auto;" alt="Vegetables">
-        <div class="card-body p-2">
-          <h6 class="card-title mb-0">Vegetables</h6>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        Organify &copy; 2025 | Healthy Choice Every Day
+    </footer>
 
-
-  <!-- Review Card Example -->
-  <div class="container my-5">
-  <h2 class="text-center mb-4 fw-bold">Customer Reviews</h2>
-
-  <!-- Review 1 -->
-  <div class="card mb-4 border-0 shadow" style="background: #fffbe5;">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-2">
-        <i class="bi bi-person-circle fs-2 text-warning me-2"></i>
-        <span class="fw-bold me-2">Jane Doe</span>
-        <div class="ms-auto">
-          <span class="text-warning">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-half"></i>
-          </span>
-        </div>
-      </div>
-      <p class="mb-1">"The organic fruits here are always fresh and taste amazing."</p>
-      <small class="text-muted">2 days ago</small>
-    </div>
-  </div>
-
-  <!-- Review 2 -->
-  <div class="card mb-4 border-0 shadow" style="background: #fffbe5;">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-2">
-        <i class="bi bi-person-circle fs-2 text-warning me-2"></i>
-        <span class="fw-bold me-2">John Smith</span>
-        <div class="ms-auto">
-          <span class="text-warning">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-          </span>
-        </div>
-      </div>
-      <p class="mb-1">"Fast delivery and great customer support!"</p>
-      <small class="text-muted">5 days ago</small>
-    </div>
-  </div>
-</div>
-
-<footer class="bg-light py-4 mt-5 border-top">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <h5 class="fw-bold">OrganicWorld</h5>
-        <p class="mb-0">Nature's choice for healthy living. Fresh organic products delivered to you.</p>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h5>Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-muted">Home</a></li>
-          <li><a href="#" class="text-muted">Shop</a></li>
-          <li><a href="#" class="text-muted">Categories</a></li>
-          <li><a href="#" class="text-muted">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h5>Contact</h5>
-        <ul class="list-unstyled">
-          <li class="text-muted">Email: info@organicworld.com</li>
-          <li class="text-muted">Phone: (123) 456-7890</li>
-          <li>
-            <a href="#" class="text-muted me-2"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-muted me-2"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-muted me-2"><i class="fab fa-twitter"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="text-center text-muted small mt-3">
-      © 2025 OrganicWorld. All rights reserved.
-    </div>
-  </div>
-</footer>
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Optional JavaScript for additional functionality -->
 </body>
+</html>
